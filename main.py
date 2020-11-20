@@ -97,4 +97,4 @@ bot.add_cog(pause.Pause(bot))
 bot.add_cog(helpCommands.Help(bot))
 bot.add_cog(moderation.Moderation(bot))
 
-bot.run("NzQwNjYwMjIyMTUzOTgyMDUz.XysPlQ.rwrSVCLLTNdIcmShKS6sWI2qtfY")
+bot.run("TOKEN")
