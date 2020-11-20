@@ -69,11 +69,10 @@ class Moderation(commands.Cog):
 #kick
     @bot.command()
     @commands.has_permissions(kick_members = True)
-    async def kick(self, ctx, user : discord.user , *reason):
-        print("kick")
-        reason = " ".join(reason)
-        await ctx.guild.kick(user, reason = reason)
-        await ctx.send(f"{user} à été kick.")
+    async def kick(self, ctx, user : discord.User, *reason):
+    	reason = " ".join(reason)
+    	await ctx.guild.kick(user, reason = reason)
+    	await ctx.send(f"{user} à été kick.")
 
 #clear
     @bot.command()
